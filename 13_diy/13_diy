@@ -28,7 +28,7 @@ const char* words[arraySize] = {
 
 int sequence[] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}; //random order
 
-void setup(){
+void setup() {
 
     pinMode(buttonPin, INPUT_PULLUP); //setting up button
     lcd.begin(16, 2);                 //size of LCD screen
@@ -37,7 +37,7 @@ void setup(){
     showStartSequence();               //start screen
 }
 
-void loop(){
+void loop() {
 
     for (int i = 0; i < arraySize; i++){    //loops through all words
 
